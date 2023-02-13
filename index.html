@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="charset" content="utf8" />
+    <title>Conway's Life</title>
+    <link rel="stylesheet" type="text/css" href="css/life.css" />
+    <link rel="stylesheet" type="text/css" href="js/css/ui-lightness/jquery-ui-1.8.17.custom.css" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="js/life.js"></script>
+    <script src="js/life-ui.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Conway's Life</h1>
+      <a href="http://en.wikipedia.org/wiki/Conway's_Life">What's this?</a>
+    </div>
+    <div id="main">
+      <div id="game">
+	<canvas id="gameBoard" width="400" height="400"></canvas>
+	<div>
+	  <button id="playpause">Play</button>
+	  <button id="onetick">1 Tick</button>
+	  <button id="clear">Clear</button>
+	  <button id="randomize">Add Noise</button>
+	  <!--<button id="buchanan">Unleash Buchanan</button>-->
+	</div>
+      </div>
+      <div id="sidebar">
+	<fieldset id="options">
+	  <legend>Options</legend>
+	  <div>Game: <input id="rules" type="text" value="23/3" /></div>
+	  <div>Speed:</div>
+	  <div class="pad">
+	    <div id="speedSlider"></div>
+	  </div>
+	  <div><button id="resetSettings">Reset</button></div>
+	</fieldset>
+	<fieldset id="presets">
+	  <legend>Presets</legend>
+	  <div><a href="#glider_gun">Glider Gun</a></div>
+	  <div><a href="#pulsar">Pulsar (Period 3)</a></div>
+	</fieldset>
+	<fieldset id="info">
+	  <legend>Info</legend>
+	  <div>Population: <span id="population"></span></div>
+	  <div>Generations: <span id="tickCount"></span></div>
+	  <div>Avg. Population: <span id="avgPopulation"></span></div>
+	  <div>Max. Population: <span id="maxPopulation"></span></div>
+	  <div>Min. Population: <span id="minPopulation"></span></div>
+	  <div><button id="resetInfo">Reset</button></div>
+	</fieldset>
+      </div>
+    </div>
+  </body>
+</html>
