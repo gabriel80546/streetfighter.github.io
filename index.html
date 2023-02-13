@@ -1,25 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="charset" content="utf8" />
+<html lang="en"><head>
+    <meta name="charset" content="utf8">
     <title>Jogo da Vida de Conway</title>
-    <link rel="stylesheet" type="text/css" href="css/life.css" />
-    <link rel="stylesheet" type="text/css" href="js/css/ui-lightness/jquery-ui-1.8.17.custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/life.css">
+    <link rel="stylesheet" type="text/css" href="js/css/ui-lightness/jquery-ui-1.8.17.custom.css">
     <script src="js/jquery-1.7.1.min.js"></script>
     <script src="js/jquery-ui-1.8.17.custom.min.js"></script>
     <script src="js/life.js"></script>
     <script src="js/life-ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+	<div id="Mestre" style="display: flex;flex-direction: column;align-items: center;gap: 20px;background-color: #282a36;">
     <div id="header">
-      <h1>Jogo da Vida de Conway</h1>
-      <a href="https://pt.wikipedia.org/wiki/Jogo_da_vida">O que é isso?</a>
+	  	<h1 style="color: #f8f8f2;">Jogo da Vida de Conway</h1>
+      <a href="https://pt.wikipedia.org/wiki/Jogo_da_vida" style="color: #50fa7b;">O que é isso?</a>
     </div>
     <div id="main">
       <div id="game">
-	<canvas id="gameBoard" width="400" height="400"></canvas>
-	<div>
-	  <button id="playpause">Start</button>
+	  <canvas style="background-color: #fff;border-radius: 15px;" id="gameBoard" width="400" height="400"></canvas>
+	<div style="margin-top: 5px;">
+	  <button id="playpause">Pause</button>
 	  <button id="onetick">1 Tick</button>
 	  <button id="clear">Limpar</button>
 	  <button id="randomize">Aumentar entropia</button>
@@ -27,29 +27,34 @@
 	</div>
       </div>
       <div id="sidebar">
-	<fieldset id="options">
+	<div style="display: flex;flex-direction: column;align-items: center;gap: 5px;">
+	<div id="presets" class="caixinhas">
 	  <legend>Opções</legend>
-	  <div>Jogo: <input id="rules" type="text" value="23/3" /></div>
+	  <div>Jogo: <input id="rules" type="text" value="23/3" style="color: red;"></div>
 	  <div>Velocidade:</div>
 	  <div class="pad">
-	    <div id="speedSlider"></div>
+	    <div id="speedSlider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 50%;"></a></div>
 	  </div>
 	  <div><button id="resetSettings">Reiniciar</button></div>
-	</fieldset>
-	<fieldset id="presets">
-	  <legend>Presets</legend>
-	  <div><a href="#glider_gun">Glider Gun</a></div>
-	  <div><a href="#pulsar">Pulsar (Period 3)</a></div>
-	</fieldset>
-	<fieldset id="info">
-	  <legend>Info</legend>
-	  <div>População: <span id="population"></span></div>
-	  <div>Gerações: <span id="tickCount"></span></div>
+	</div>
+	<div id="presets" class="caixinhas">
+	  <legend>Predefinições</legend>
+	  <div><a href="#glider_gun" style="color: #ff5555;">Glider Gun</a></div>
+	  <div><a href="#pulsar" style="color: #ff5555;">Pulsar Period 3</a></div>
+	
+	
+	  </div>
+          <div id="presets" class="caixinhas">
+	  <legend>Informações</legend>
+	  <div>População: <span id="population">149</span></div>
+	  <div>Gerações: <span id="tickCount">0</span></div>
 	  <div>População média: <span id="avgPopulation"></span></div>
-	  <div>População máxima: <span id="maxPopulation"></span></div>
-	  <div>População mínima: <span id="minPopulation"></span></div>
-	  <div><button id="resetInfo">Reiniciar</button></div>
-	</fieldset>
+	  <div>População máxima: <span id="maxPopulation">149</span></div>
+	  <div>População mínima: <span id="minPopulation">149</span></div>
+	  <div>
+		<button id="resetInfo">Reiniciar</button></div>
+	</div></div>
+        </div>
       </div>
     </div>
   </body>

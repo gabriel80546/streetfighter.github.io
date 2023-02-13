@@ -1,11 +1,34 @@
-body { font-family: Helvetica, Arial, sans-serif; }
-#header { padding-left: 70px; height: 64px; background: url(life.gif) no-repeat; margin-bottom: 10px; }
-#header h1 { margin-bottom: 5px; }
-#gameBoard { border: 1px solid #000; }
-#rules { width: 40px; }
-#game { float: left; }
-#sidebar { margin-left: 410px; width: 170px; font-size: 10pt; }
-#sidebar fieldset { margin-bottom: 20px; }
-#sidebar legend { font-weight: bold; }
-#info div { margin: 2px 0 6px 0; }
-.pad { padding: 10px; }
+* {
+    color: #8be9fd
+  }
+  button {
+    background: #ff5555;
+    border-radius: 5px;
+
+    border: 1px solid #000;
+    padding: 2px 4px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  body { 
+    background: #282a36;
+    font-family: Helvetica, Arial, sans-serif; color: #f8f8f2;}
+  #header { padding-left: 70px; height: 64px; background: url(life.gif) no-repeat; margin-bottom: 10px; }
+  #header h1 { margin-bottom: 5px; }
+  #gameBoard { border: 1px solid #000; }
+  #rules { width: 40px; }
+  #game { float: left; }
+  #sidebar { margin-left: 410px; width: 200px; font-size: 10pt; }
+  #sidebar fieldset { margin-bottom: 20px; }
+  #sidebar legend { font-weight: bold; }
+  #info div { margin: 2px 0 6px 0; }
+  .pad { padding: 10px; }
+a {
+    text-decoration: none;
+}
+
+.caixinhas {
+    border: 3px solid #f8f8f2;
+    padding: 5px;
+    width: 80%;
+}
