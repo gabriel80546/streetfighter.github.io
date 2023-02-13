@@ -13,28 +13,28 @@
   <body>
     <div id="header">
       <h1>Conway's Life</h1>
-      <a href="http://en.wikipedia.org/wiki/Conway's_Life">What's this?</a>
+      <a href="http://en.wikipedia.org/wiki/Conway's_Life">O que é isso?</a>
     </div>
     <div id="main">
       <div id="game">
 	<canvas id="gameBoard" width="400" height="400"></canvas>
 	<div>
-	  <button id="playpause">Play</button>
+	  <button id="playpause">Start</button>
 	  <button id="onetick">1 Tick</button>
-	  <button id="clear">Clear</button>
-	  <button id="randomize">Add Noise</button>
+	  <button id="clear">Limpar</button>
+	  <button id="randomize">Aumentar entropia</button>
 	  <!--<button id="buchanan">Unleash Buchanan</button>-->
 	</div>
       </div>
       <div id="sidebar">
 	<fieldset id="options">
-	  <legend>Options</legend>
-	  <div>Game: <input id="rules" type="text" value="23/3" /></div>
-	  <div>Speed:</div>
+	  <legend>Opções</legend>
+	  <div>Jogo: <input id="rules" type="text" value="23/3" /></div>
+	  <div>Velocidade:</div>
 	  <div class="pad">
 	    <div id="speedSlider"></div>
 	  </div>
-	  <div><button id="resetSettings">Reset</button></div>
+	  <div><button id="resetSettings">Reiniciar</button></div>
 	</fieldset>
 	<fieldset id="presets">
 	  <legend>Presets</legend>
@@ -43,12 +43,12 @@
 	</fieldset>
 	<fieldset id="info">
 	  <legend>Info</legend>
-	  <div>Population: <span id="population"></span></div>
-	  <div>Generations: <span id="tickCount"></span></div>
-	  <div>Avg. Population: <span id="avgPopulation"></span></div>
-	  <div>Max. Population: <span id="maxPopulation"></span></div>
-	  <div>Min. Population: <span id="minPopulation"></span></div>
-	  <div><button id="resetInfo">Reset</button></div>
+	  <div>População: <span id="population"></span></div>
+	  <div>Gerações: <span id="tickCount"></span></div>
+	  <div>População média: <span id="avgPopulation"></span></div>
+	  <div>População máxima: <span id="maxPopulation"></span></div>
+	  <div>População mínima: <span id="minPopulation"></span></div>
+	  <div><button id="resetInfo">Reiniciar</button></div>
 	</fieldset>
       </div>
     </div>
