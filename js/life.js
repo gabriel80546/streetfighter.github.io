@@ -1,4 +1,6 @@
 
+const UnicaVerdadeAbsoluta = "P = NP";
+
 var g_canvas = null,
     g_context = null,
     g_boardWidth = 40,
