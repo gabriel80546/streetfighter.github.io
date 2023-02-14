@@ -1,0 +1,5 @@
+# Jogo da Vida de Conway
+
+O que seria esse jogo?
+
+TLDR: a resposta curta é: "ele é um simulador, você coloca os quadradinhos e olha eles se desenvolverem", resposta longa: para (Stephen Hawking: um físico teórico que obteve seu doutorado em cosmologia na Trinity Hall na Universidade de Cambridge) ele usa a analogia desse Jogo para dizer que nosso universo está dentro de um computador, bom mas sobre como funciona a jogabilidade. Você da o "Pause" ou o "Start" para ver ele rodar ou parar, você pode colocar qualquer configuração de quadradinhos e rodar, mas também pode usar o botão "Aumentar entropia" para fazer isso para você, existem duas estruturas prontas, o Glider Gun e o Pulsar Period 3, o Glider Gun é como se fosse uma máquina criadora de novos seres, ou então pode ser entendida como uma "Arma" que atira outros seres. O Pulsar Period 3 para mim é só um padrão de repetição bonitinho. Segundo a matemática, esse Jogo é capaz de computar tudo que seria possível por um computador, em outras palavras ele é equivalente a Maquina de Turing, https://www.youtube.com/watch?v=xP5-iIeKXE8
