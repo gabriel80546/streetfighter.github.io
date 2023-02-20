@@ -25,3 +25,15 @@
     top: 10px;
     left: 130px;
 }
+
+.carrossel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.thumbnail-container {
+    margin-right: 10px;
+}
